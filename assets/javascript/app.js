@@ -4,7 +4,7 @@ var numResults = 0;
 //var queryURL = "";
 var actor = $(this).attr("data-name");
 var apiKey = "586d2988a81544979263f48629a82e5e";
-var queryURLStarter = "http://api.giphy.com/v1/gifs/search?api_key=" + apiKey;
+var queryURLStarter = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey;
 
 var giphyCounter = 0;
 

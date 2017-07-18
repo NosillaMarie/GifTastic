@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GifTastic Project</title>
-<!--css reset-->
+    <!--css reset-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
-<!--    Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--My CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-            <h1>It's GifTastic!</h1>
-            <!--where buttons will be dynamically created-->
-            <div id="buttons-view"></div>
+        <h1>It's GifTastic!</h1>
+        <!--where buttons will be dynamically created-->
+        <div id="buttons-view"></div>
 
-            <!--Text Area to add button to the list of gif buttons-->
-            <form id="actor-form">
-                <label for="actor-input">Pick an Actor, any Actor!</label>
-                <input type="text" id="actor-input">
-                <br>
+        <!--Text Area to add button to the list of gif buttons-->
+        <form id="actor-form">
+            <label for="actor-input">Pick an Actor, any Actor!</label>
+            <input type="text" id="actor-input">
+            <br>
 
-                <!-- Button triggers new actor button that will be added -->
-                <input id="add-actor" type="submit" value="Add Actor">
-            </form>
+            <!-- Button triggers new actor button that will be added -->
+            <input id="#add-actor" class="btn-success" type="submit" value="Add Actor">
+        </form>
 
-            <!--Created GIFs from buttons will go here-->
+        <!--Created GIFs from buttons will go here-->
+        <div class="container">
             <div id="actors-view" class="row"></div>
-
         </div>
+    </div>
     <!--My javascript link-->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
